@@ -1,5 +1,5 @@
 sut:
   build: .
   volumes:
-  - test/kibana_responds_on_web.sh:/tmp/kibana_responds_on_web.sh
-  command: /tmp/kibana_responds_on_web.sh
+  - test_kibana_responds_on_web.sh:/tmp/test_kibana_responds_on_web.sh
+  command: /tmp/test_kibana_responds_on_web.sh
