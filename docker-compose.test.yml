@@ -1,3 +1,4 @@
 sut:
   build: .
-  command: test/kibana_responds_on_web.sh
+  volumes: test/kibana_responds_on_web.sh:/tmp/kibana_responds_on_web.sh
+  command: /tmp/kibana_responds_on_web.sh
