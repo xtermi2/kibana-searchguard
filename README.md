@@ -1,4 +1,6 @@
 # Kibana OSS Docker Image with preinstalled Search Guard Plugin and ready to run in OpenShift.
+[![](https://images.microbadger.com/badges/version/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard "Get your own image badge on microbadger.com")
 
 Have a look at [xtermi2/elasticsearch-searchguard](https://github.com/xtermi2/elasticsearch-searchguard) 
 for a fitting elasticsearch.

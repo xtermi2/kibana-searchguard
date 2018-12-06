@@ -1,5 +1,17 @@
 FROM docker.elastic.co/kibana/kibana-oss:6.5.1
 
+ARG VCS_REF
+ARG BUILD_DATE
+
+LABEL description="kibana secured with search-guard"
+LABEL org.label-schema.name="kibana-searchguard"
+LABEL org.label-schema.description="kibana secured with search-guard"
+LABEL org.label-schema.usage="https://github.com/xtermi2/elasticsearch-searchguard/tree/master/example"
+LABEL org.label-schema.url="https://github.com/xtermi2/elasticsearch-searchguard"
+LABEL org.label-schema.vcs-url="https://github.com/xtermi2/elasticsearch-searchguard"
+LABEL org.label-schema.vcs-ref=$VCS_REF
+LABEL org.label-schema.build-date=$BUILD_DATE
+
 ENV KIBANA_VERSION "6.5.1"
 ENV SG_VERSION "16"
 
