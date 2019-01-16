@@ -1,4 +1,4 @@
-FROM docker.elastic.co/kibana/kibana-oss:6.5.3
+FROM docker.elastic.co/kibana/kibana-oss:6.5.4
 
 ARG VCS_REF
 ARG BUILD_DATE
@@ -12,8 +12,8 @@ LABEL org.label-schema.vcs-url="https://github.com/xtermi2/elasticsearch-searchg
 LABEL org.label-schema.vcs-ref=$VCS_REF
 LABEL org.label-schema.build-date=$BUILD_DATE
 
-ENV KIBANA_VERSION "6.5.3"
-ENV SG_VERSION "16"
+ENV KIBANA_VERSION "6.5.4"
+ENV SG_VERSION "17"
 
 RUN bin/kibana-plugin install https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-kibana-plugin/${KIBANA_VERSION}-${SG_VERSION}/search-guard-kibana-plugin-${KIBANA_VERSION}-${SG_VERSION}.zip \
     && chmod -R a+rw /usr/share/kibana/optimize \
