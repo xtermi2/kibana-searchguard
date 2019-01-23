@@ -2,6 +2,7 @@
 [![](https://images.microbadger.com/badges/version/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
 [![](https://images.microbadger.com/badges/image/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
 [![](https://images.microbadger.com/badges/commit/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
+[![Build Status](https://travis-ci.org/xtermi2/kibana-searchguard.svg?branch=master)](https://travis-ci.org/xtermi2/kibana-searchguard)
 
 Have a look at [xtermi2/elasticsearch-searchguard](https://github.com/xtermi2/elasticsearch-searchguard) for a fitting elasticsearch.
 
