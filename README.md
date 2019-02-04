@@ -1,4 +1,5 @@
 # Kibana OSS Docker Image with preinstalled Search Guard Plugin and ready to run in OpenShift.
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/28b12a0ce359462e9b86b2d3860097bd)](https://app.codacy.com/app/xtermi2/kibana-searchguard?utm_source=github.com&utm_medium=referral&utm_content=xtermi2/kibana-searchguard&utm_campaign=Badge_Grade_Dashboard)
 [![](https://images.microbadger.com/badges/version/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
 [![](https://images.microbadger.com/badges/image/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
 [![](https://images.microbadger.com/badges/commit/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
