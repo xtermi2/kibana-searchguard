@@ -19,7 +19,7 @@ Here is a example how to run it with an existing elasticsearch:
 ```bash
 docker run \
     -p 5601:5601 \
-    -e "ELASTICSEARCH_URL=https://my-elasticsearch:9200" \
+    -e "ELASTICSEARCH_HOSTS=https://my-elasticsearch:9200" \
     -e "ELASTICSEARCH_USERNAME=kibana" \
     -e "ELASTICSEARCH_PASSWORD=kibana" \
     -e "ELASTICSEARCH_SSL_VERIFICATIONMODE=none" \
