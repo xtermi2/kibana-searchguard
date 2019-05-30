@@ -5,6 +5,9 @@
 [![](https://images.microbadger.com/badges/commit/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
 [![Build Status](https://travis-ci.org/xtermi2/kibana-searchguard.svg?branch=master)](https://travis-ci.org/xtermi2/kibana-searchguard)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/28b12a0ce359462e9b86b2d3860097bd)](https://app.codacy.com/app/xtermi2/kibana-searchguard?utm_source=github.com&utm_medium=referral&utm_content=xtermi2/kibana-searchguard&utm_campaign=Badge_Grade_Dashboard)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 Have a look at [xtermi2/elasticsearch-searchguard](https://github.com/xtermi2/elasticsearch-searchguard) for a fitting elasticsearch.
 
