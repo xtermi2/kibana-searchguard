@@ -1,4 +1,4 @@
-FROM docker.elastic.co/kibana/kibana-oss:7.7.0
+FROM docker.elastic.co/kibana/kibana-oss:7.7.1
 
 ARG VCS_REF
 ARG BUILD_DATE
