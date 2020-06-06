@@ -1,4 +1,4 @@
-FROM docker.elastic.co/kibana/kibana-oss:7.7.0
+FROM docker.elastic.co/kibana/kibana-oss:7.7.1
 
 ARG VCS_REF
 ARG BUILD_DATE
@@ -13,8 +13,8 @@ LABEL org.label-schema.vcs-url="https://github.com/xtermi2/kibana-searchguard"
 LABEL org.label-schema.vcs-ref=$VCS_REF
 LABEL org.label-schema.build-date=$BUILD_DATE
 
-ENV KIBANA_VERSION "7.7.0"
-ENV SG_VERSION "41.0.0"
+ENV KIBANA_VERSION "7.7.1"
+ENV SG_VERSION "42.0.0"
 
 RUN bin/kibana-plugin install https://releases.floragunn.com/search-guard-kibana-plugin-7/${KIBANA_VERSION}-${SG_VERSION}/search-guard-kibana-plugin-7-${KIBANA_VERSION}-${SG_VERSION}.zip \
     && chmod -R a+rw /usr/share/kibana/optimize \
