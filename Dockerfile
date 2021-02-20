@@ -2,7 +2,6 @@ FROM docker.elastic.co/kibana/kibana-oss:7.10.2
 
 ARG VCS_REF
 ARG BUILD_DATE
-ARG MICROSCANNER_TOKEN
 
 LABEL description="kibana secured with search-guard"
 LABEL org.label-schema.name="kibana-searchguard"
@@ -22,8 +21,7 @@ RUN bin/kibana-plugin install https://maven.search-guard.com/search-guard-kibana
     && chmod -R a+rw /usr/share/kibana/data \
     && ls -al /usr/share/kibana/data
 
-#run Aqua MicroScanner - scan for vulnerabilities
-RUN curl -L -o /tmp/microscanner https://get.aquasec.com/microscanner \
-    && chmod +x /tmp/microscanner \
-    && /tmp/microscanner $MICROSCANNER_TOKEN --continue-on-failure \
+#run Aqua's trivy - scan for vulnerabilities
+RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /tmp \
+    && /tmp/trivy filesystem --no-progress / \
     && rm -rf /tmp/microscanner
