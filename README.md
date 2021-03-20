@@ -1,4 +1,4 @@
-# Kibana OSS Docker Image with preinstalled Search Guard Plugin and ready to run in OpenShift
+# Kibana Docker Image with preinstalled Search Guard Plugin and ready to run in OpenShift
 
 [![](https://images.microbadger.com/badges/version/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
 [![](https://images.microbadger.com/badges/image/xtermi2/kibana-searchguard.svg)](https://microbadger.com/images/xtermi2/kibana-searchguard)
@@ -15,7 +15,7 @@ Have a look at [xtermi2/elasticsearch-searchguard/example/README.md](https://git
 
 ## How to use
 
-This image can be used in the same way as the [original elastic kibana OSS image](https://www.elastic.co/guide/en/kibana/current/docker.html).
+This image can be used in the same way as the [original elastic kibana image](https://www.elastic.co/guide/en/kibana/current/docker.html).
 Have also a look at the [searchguard kibana configuration](https://docs.search-guard.com/latest/kibana-authentication-http-basic).
 Here is a example how to run it with an existing elasticsearch:
 
