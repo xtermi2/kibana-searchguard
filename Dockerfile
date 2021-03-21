@@ -24,4 +24,4 @@ RUN bin/kibana-plugin install https://maven.search-guard.com/search-guard-kibana
 #run Aqua's trivy - scan for vulnerabilities
 RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /tmp \
     && /tmp/trivy filesystem --no-progress / \
-    && rm -rf /tmp/microscanner
+    && rm -rf /tmp/trivy
