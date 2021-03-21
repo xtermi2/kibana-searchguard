@@ -22,6 +22,7 @@ Here is a example how to run it with an existing elasticsearch:
 ```bash
 docker run \
     -p 5601:5601 \
+    -e "XPACK_SECURITY_ENABLED=false" \
     -e "ELASTICSEARCH_HOSTS=https://my-elasticsearch:9200" \
     -e "ELASTICSEARCH_USERNAME=kibana" \
     -e "ELASTICSEARCH_PASSWORD=kibana" \
@@ -30,6 +31,10 @@ docker run \
     --name kibana-searchguard \
     xtermi2/kibana-searchguard 
 ```
+
+NOTE: Since Kibana 7.11 you have to disable _x-pack-security_ plugin, which is now included in Kibana and will clash with Search Guard. Disable it e.g. via 
+-   `kibana.yml`: `xpack.security.enabled: "false"`
+-   Environment variable: `XPACK_SECURITY_ENABLED=false` (see example above)
 
 ## User Feedback
 
