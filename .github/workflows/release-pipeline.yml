@@ -21,6 +21,8 @@ jobs:
         run: docker build --build-arg VCS_REF=`git rev-parse HEAD` --build-arg BUILD_DATE=`date --iso-8601=seconds` -t $IMAGE_NAME:latest --no-cache .
       - name: print image details
         run: docker inspect $IMAGE_NAME
+      - name: run Aqua's trivy - scan for vulnerabilities
+        run: docker run -it --rm -u 0 $IMAGE_NAME:latest bash -c 'curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /tmp && /tmp/trivy filesystem --no-progress --severity HIGH,CRITICAL /'
 
   release:
     # Release to dockerhub and create Github release
